@@ -41,10 +41,10 @@ Cobalt Strike User-Defined Reflective Loader written in Assembly & C for advance
 
 |Original Cobalt Strike String|BokuLoader Cobalt Strike String|
 |------------------------------|---------------------------------|
-|ReflectiveLoader|djoiqnfkjlnslfmn|
-|Microsoft Base Cryptographic Provider v1.0|12367321236742382543232341241261363163151d|
-|(admin)|(tomin)|
-|beacon|bacons|
+|ReflectiveLoader|~~djoiqnfkjlnslfmn~~|
+|Microsoft Base Cryptographic Provider v1.0|~~12367321236742382543232341241261363163151d~~|
+|(admin)|~~(tomin)~~|
+|beacon|~~bacons~~|
 + BokuLoader calls the following NT systemcalls to setup the loaded executable beacon memory: `NtAllocateVirtualMemory`, `NtProtectVirtualMemory`, `NtFreeVirtualMemory`
   + These are called directly from the BokuLoader executable memory. These system calls are not backed by NTDLL memory.
   + Setting userland hooks in `ntdll.dll` will not detect these systemcalls.
